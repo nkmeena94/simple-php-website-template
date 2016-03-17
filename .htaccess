@@ -1,0 +1,4 @@
+# Maps all requests to domain.com/<name> to index.php
+
+RewriteEngine On
+RewriteRule ^[\w\-]+$		/index.php [L]
