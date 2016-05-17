@@ -1,6 +1,6 @@
 # Maps all requests to domain.com/<name> to index.php
 
 RewriteEngine On
-RewriteRule ^[\w\-]+$		/index.php [L]
-RewriteRule ^stream			/index.php [L]
-RewriteRule ^(views|controllers|config|models) - [R=403,L]
+RewriteRule ^[\w\/\-]+$						/index.php [L]
+RewriteRule ^files/[\w\/\-]+\.[a-z]+$		/index.php [L]
+RewriteRule ^(views|controllers|config|models|files) - [R=403,L]

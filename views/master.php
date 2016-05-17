@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" class="page-<?=$subView?>">
+<html lang="de" class="page-<?=str_replace("/", "-", $subView)?>">
 <head>
 	<meta charset="utf-8">
 	<title>Titel</title>
