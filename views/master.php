@@ -15,7 +15,7 @@
 	<header>
 		<div id="title">Titel im Header</div>
 		<ul>
-			<li class="nav-home"><a href="/">Home</a></li>
+			<li class="nav-home"><a href="/">Home11</a></li>
 			<li class="nav-kontakt"><a href="/kontakt">Kontakt</a></li>
 		</ul>
 	</header>
