@@ -22,9 +22,22 @@
  */
 
 
-require("config/config.php");
-require("models/Core.php");
-spl_autoload_register(array('Core', 'autoload'));
+// require("config/config.php");
+// require("models/Core.php");
+// spl_autoload_register(array('Core', 'autoload'));
 
-Core::controller();
+// Core::controller();
+
+
+
+//echo "Hello";
+require_once 'thirdparty/vendor/autoload.php';
+
+$loader = new Twig_Loader_Filesystem('views');
+//print_r($loader);
+
+$twig = new Twig_Environment($loader);
+//print_r($twig);
+echo $twig->render('index.html', array('name' => 'Fabien'));
+
 ?>

@@ -3,4 +3,8 @@
 RewriteEngine On
 RewriteRule ^[\w\/\-]+$						/index.php [L]
 RewriteRule ^files/[\w\/\-]+\.[a-z]+$		/index.php [L]
-RewriteRule ^(views|controllers|config|models|files) - [R=403,L]
+
+RewriteRule ^[\w\/\-]+$						/index.html [L]
+RewriteRule ^files/[\w\/\-]+\.[a-z]+$		/index.html [L]
+
+RewriteRule ^(views|controllers|login|config|models|files) - [R=403,L]
